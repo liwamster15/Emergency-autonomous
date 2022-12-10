@@ -13,7 +13,7 @@ public class cerrarcajas implements Action{
     }
 
     public void start(){
-        mCajas.cajasAuto(1);
+        mCajas.cajasAuto(1); //No tengo idea para que sirve esto
         startTime = Timer.getFPGATimestamp();
 
 

@@ -36,6 +36,7 @@ import frc.robot.Auto.Actions.Backward;
 import frc.robot.Auto.Actions.DisBallIntake;
 import frc.robot.Auto.Actions.DisBoxIntake;
 import frc.robot.subsystems.ballOuttake;
+import frc.robot.Auto.modes.*;
 
 
 /**
@@ -61,6 +62,8 @@ public class Robot extends TimedRobot {
 
 
   //Acciones del autónomo
+
+  Mode1 mMode = new Mode();
 
   autoTest mAutoTest = new autoTest();
 
@@ -113,6 +116,8 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousInit() {
     m_autonomousCommand = m_robotContainer.getAutonomousCommand();
+
+    mMode.routine();
 
     //Inicia contador de autónomo
     AutoTimer.getRelativeTimer();

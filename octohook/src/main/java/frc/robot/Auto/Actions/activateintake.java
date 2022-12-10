@@ -13,7 +13,7 @@ public class activateintake implements Action{
     }
 
     public void start(){
-        mIntake.Intakeauto(.7);
+        mIntake.Intakeauto(.7); //Parecen ser velocidades
         startTime = Timer.getFPGATimestamp();
 
 
